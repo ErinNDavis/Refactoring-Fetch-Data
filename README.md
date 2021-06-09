@@ -3,7 +3,7 @@
 <h3> About Project </h3>
   
   <img src="">
-  <p>     </p> 
+  <p>  The goal of this app is to use REACT to list out links relavent to a particular topic.   </p> 
   
 <h3> Viewing This Project </h3>
   <p> Source Code: </p>
