@@ -96,9 +96,50 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10;
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    'https://hn.algolia.com/api/v1/search?query=MIT',
+    http://api.citybik.es/v2/networks
     {
-      hits: [],
+      "networks": [
+        {
+            "company": "JCDecaux", 
+            "href": "/v2/networks/velib", 
+            "location": {
+              "latitude": 48.856612, 
+              "city": "Paris", 
+              "longitude": 2.352233, 
+              "country": "FRA"
+            }, 
+            "name": "Vélib'", 
+            "id": "velib"
+        },
+        {...}
+      ]
+    }
+    http://api.citybik.es/v2/networks/network_id
+    {
+      "network": {
+        "name": "Vélib'", 
+        "stations": [
+          {
+              "name": "00903 - QUAI MAURIAC  / PONT DE BERCY",  
+              "timestamp": "2014-04-14T12:10:17.622Z", 
+              "longitude":                        
+              "free_bikes": 
+              "latitude":  
+              "empty_slots": 19,  
+              "id": "f5a551a87eec15155d6409fe9d0ff8e2"
+          },
+          {...}
+        ], 
+        "company": "JCDecaux",           
+        "href": "/v2/networks/velib",       
+        "location": {                    
+          "latitude": 48.856612,        
+          "city": "Paris",               
+          "longitude": 2.352233,         
+          "country": "FRA"              
+        },                               
+        "id": "velib"                    
+      }
     }
   );
   const handlePageChange = (e) => {
