@@ -6,7 +6,7 @@
   <p>  The goal of this app is to use REACT to list out links relavent to a particular topic.   </p> 
   
 <h3> Viewing This Project </h3>
-  <p> Source Code: </p>
+  <p> Source Code: https://github.com/ErinNDavis/Refactoring-Fetch-Data/blob/main/fetchData.jsx </p>
 
 <h3> Contact </h3>
 
